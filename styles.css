@@ -51,13 +51,15 @@ body {
     padding: 1.25rem 20px;
 }
 
-.logo h1 {
+.logo h1,
+.logo .logo-text {
     font-size: 1.5rem;
     color: var(--primary-color);
     font-weight: 700;
 }
 
-.logo-prominent h1 {
+.logo-prominent h1,
+.logo-prominent .logo-text {
     font-size: 1.75rem;
     font-weight: 900;
     letter-spacing: 1px;
@@ -431,12 +433,6 @@ body {
 
 .events-bold {
     padding: 7rem 0;
-}
-
-.events-calendar .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
 }
 
 .events-content {
@@ -932,10 +928,6 @@ footer {
         padding: 4rem 0;
     }
 
-    .events-calendar .container {
-        grid-template-columns: 1fr;
-    }
-
     .events-content {
         grid-template-columns: 1fr;
     }
@@ -989,7 +981,8 @@ footer {
         gap: 1rem;
     }
 
-    .logo-prominent h1 {
+    .logo-prominent h1,
+    .logo-prominent .logo-text {
         font-size: 1.5rem;
     }
 
