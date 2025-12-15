@@ -123,13 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '0';
-                entry.target.style.transform = 'translateY(20px)';
-                setTimeout(() => {
-                    entry.target.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }, 100);
+                entry.target.classList.add('fade-in');
                 observer.unobserve(entry.target);
             }
         });
@@ -137,6 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Observe service cards and project items
     document.querySelectorAll('.service-card, .project-item, .event-item').forEach(el => {
+        el.classList.add('fade-in-ready');
         observer.observe(el);
     });
 
@@ -145,8 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', (e) => {
             const buttonText = e.target.textContent;
             console.log(`${buttonText} button clicked`);
-            // In a real implementation, this would trigger actual actions
-            alert(`Thank you for your interest in ${buttonText}! This feature would connect to our registration system.`);
+            // In a real implementation, this would trigger actual actions like navigation or form submission
         });
     });
 });
