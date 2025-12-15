@@ -3,255 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation Arts – Coming Soon</title>
     <meta name="description" content="Operation Arts - Empowering communities through arts and culture">
-    <title>Operation Arts - Home</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at 50% 30%, #0C0C0D 0%, #080326 100%);
+        }
+        .coming-soon-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .coming-soon-title {
+            font-size: 3rem;
+            color: #fff;
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 4px 24px #6366f1, 0 2px 8px #8b5cf6;
+        }
+        .coming-soon-subtitle {
+            font-size: 1.5rem;
+            color: #ec4899;
+            margin-bottom: 2.5rem;
+            font-weight: 600;
+        }
+        .coming-soon-logo {
+            font-size: 2.2rem;
+            color: #6366f1;
+            font-weight: 900;
+            margin-bottom: 2rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .footer-powered {
+            width: 100%;
+            text-align: center;
+            padding: 2rem 0 1rem 0;
+            color: #fff;
+            font-size: 1rem;
+            background: transparent;
+        }
+        .footer-powered a {
+            color: #ec4899;
+            text-decoration: underline;
+            font-weight: 700;
+            transition: color 0.2s;
+        }
+        .footer-powered a:hover {
+            color: #8b5cf6;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-bold">
-            <div class="container">
-                <div class="logo logo-prominent">
-                    <div class="logo-text">OPERATION ARTS</div>
-                </div>
-                <ul class="nav-links nav-bold">
-                    <li><a href="#mission">Mission</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#contact" class="cta-button cta-bold">Get Involved</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Hero Section with Mission Statement -->
-        <section id="mission" class="hero hero-bold">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">OPERATION ARTS</h1>
-                    <h2 class="hero-subtitle">Empowering Communities Through Creative Expression</h2>
-                    <p class="mission-statement mission-bold">
-                        We believe in the transformative power of the arts to 
-                        inspire, educate, and bring people together across all backgrounds and experiences.
-                    </p>
-                    <p class="mission-tagline">
-                        Through accessible programs, community engagement, and innovative partnerships, 
-                        we create opportunities for individuals to discover their creative potential and 
-                        contribute to a vibrant cultural landscape.
-                    </p>
-                    <div class="hero-cta">
-                        <a href="#services" class="btn btn-hero btn-large">Explore Our Programs</a>
-                        <a href="#contact" class="btn btn-hero-secondary btn-large">Join Us Today</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="services services-bold">
-            <div class="container">
-                <h2 class="section-title section-title-bold">WHAT WE OFFER</h2>
-                <p class="section-subtitle">Transformative programs that empower communities through the arts</p>
-                <div class="services-grid services-grid-enhanced">
-                    <div class="service-card service-card-bold">
-                        <div class="service-icon service-icon-large">🎨</div>
-                        <h3>Art Workshops</h3>
-                        <p>Interactive workshops for all ages, from painting and drawing to sculpture and mixed media.</p>
-                    </div>
-                    <div class="service-card service-card-bold">
-                        <div class="service-icon service-icon-large">🎭</div>
-                        <h3>Theater Programs</h3>
-                        <p>Drama classes, performance opportunities, and theater productions that build confidence and creativity.</p>
-                    </div>
-                    <div class="service-card service-card-bold">
-                        <div class="service-icon service-icon-large">🎵</div>
-                        <h3>Music Education</h3>
-                        <p>Music lessons, ensemble groups, and performance training for aspiring musicians of all skill levels.</p>
-                    </div>
-                    <div class="service-card service-card-bold">
-                        <div class="service-icon service-icon-large">📚</div>
-                        <h3>Cultural Programs</h3>
-                        <p>Educational programs celebrating diverse cultures through art, storytelling, and community events.</p>
-                    </div>
-                    <div class="service-card service-card-bold">
-                        <div class="service-icon service-icon-large">🤝</div>
-                        <h3>Community Outreach</h3>
-                        <p>Bringing arts programming to underserved communities and partnering with local organizations.</p>
-                    </div>
-                    <div class="service-card service-card-bold">
-                        <div class="service-icon service-icon-large">🎓</div>
-                        <h3>Youth Mentorship</h3>
-                        <p>Mentorship programs connecting young artists with professional creatives in their field of interest.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Previous Projects Banner/Gallery -->
-        <section id="projects" class="projects-banner projects-bold">
-            <div class="container">
-                <h2 class="section-title section-title-bold section-title-light">PREVIOUS PROJECTS</h2>
-                <p class="section-subtitle section-subtitle-light">Celebrating our impact in the community</p>
-                <div class="projects-gallery">
-                    <div class="project-item">
-                        <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                            <div class="project-overlay">
-                                <h3>Community Mural Project</h3>
-                                <p>2023</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                            <div class="project-overlay">
-                                <h3>Youth Theater Festival</h3>
-                                <p>2023</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                            <div class="project-overlay">
-                                <h3>Summer Arts Camp</h3>
-                                <p>2023</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
-                            <div class="project-overlay">
-                                <h3>Cultural Heritage Exhibition</h3>
-                                <p>2022</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
-                            <div class="project-overlay">
-                                <h3>Music in the Park Series</h3>
-                                <p>2022</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
-                            <div class="project-overlay">
-                                <h3>Art & Technology Workshop</h3>
-                                <p>2022</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Event Calendar Section -->
-        <section id="events" class="events-calendar events-bold">
-            <div class="container">
-                <h2 class="section-title section-title-bold section-title-center">UPCOMING EVENTS</h2>
-                <p class="section-subtitle section-subtitle-center">Join us for exciting programs and performances</p>
-                <div class="events-content">
-                    <div class="calendar-container">
-                        <div class="calendar-header">
-                            <button id="prevMonth" class="calendar-nav">&lt;</button>
-                            <h3 id="currentMonth"></h3>
-                            <button id="nextMonth" class="calendar-nav">&gt;</button>
-                        </div>
-                        <div class="calendar-weekdays">
-                            <div>Sun</div>
-                            <div>Mon</div>
-                            <div>Tue</div>
-                            <div>Wed</div>
-                            <div>Thu</div>
-                            <div>Fri</div>
-                            <div>Sat</div>
-                        </div>
-                        <div id="calendarDays" class="calendar-days"></div>
-                    </div>
-                    <div class="events-list">
-                        <h3>Featured Events</h3>
-                        <div class="event-item">
-                            <div class="event-date">
-                                <span class="event-day">15</span>
-                                <span class="event-month">Jan</span>
-                            </div>
-                            <div class="event-details">
-                                <h4>New Year Art Exhibition Opening</h4>
-                                <p>Join us for the opening of our annual exhibition featuring local artists.</p>
-                                <span class="event-time">6:00 PM - 9:00 PM</span>
-                            </div>
-                        </div>
-                        <div class="event-item">
-                            <div class="event-date">
-                                <span class="event-day">22</span>
-                                <span class="event-month">Jan</span>
-                            </div>
-                            <div class="event-details">
-                                <h4>Youth Theater Auditions</h4>
-                                <p>Open auditions for our spring theater production. All ages welcome!</p>
-                                <span class="event-time">4:00 PM - 7:00 PM</span>
-                            </div>
-                        </div>
-                        <div class="event-item">
-                            <div class="event-date">
-                                <span class="event-day">05</span>
-                                <span class="event-month">Feb</span>
-                            </div>
-                            <div class="event-details">
-                                <h4>Community Art Workshop</h4>
-                                <p>Free workshop exploring watercolor techniques for beginners.</p>
-                                <span class="event-time">10:00 AM - 12:00 PM</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact/CTA Section -->
-        <section id="contact" class="cta-section cta-bold">
-            <div class="container">
-                <h2 class="cta-title">JOIN OUR COMMUNITY</h2>
-                <p class="cta-description">Be part of the movement to bring arts and culture to everyone.</p>
-                <div class="cta-buttons">
-                    <button class="btn btn-primary btn-large">Volunteer</button>
-                    <button class="btn btn-secondary btn-large">Donate</button>
-                    <button class="btn btn-secondary btn-large">Learn More</button>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Operation Arts</h3>
-                    <p>Empowering communities through creative expression.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#mission">Mission</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#events">Events</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Email: info@operationarts.org</p>
-                    <p>Phone: (555) 123-4567</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Operation Arts. All rights reserved.</p>
-            </div>
+    <div class="coming-soon-container">
+        <div class="coming-soon-logo">OPERATION ARTS</div>
+        <div class="coming-soon-title">Coming Soon</div>
+        <div class="coming-soon-subtitle">
+            We’re working hard to launch our new website.<br>
+            Stay tuned for something amazing!
         </div>
+    </div>
+    <footer class="footer-powered">
+        Powered by <a href="https://www.interserver.net" target="_blank" rel="noopener">InterServer</a>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
